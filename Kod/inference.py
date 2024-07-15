@@ -690,24 +690,15 @@ def predict(model, test_loader):
 
 
 
-        mean_iou_ids2_oneclass, iou_ids2_oneclass,mean_iou_ids2_multiclass, iou_ids2_multiclass, ious_multicass_annotator2, ious_oneclass_annotator2 = inference(x_images, true_masks2, true2, pred1, pred2, number='_annotator2',
-                                            mask_name='annotator2', video_name='ids2', class_diff=False,name = saved_model_name+'_')
+        mean_iou_ids2_oneclass, iou_ids2_oneclass,mean_iou_ids2_multiclass, iou_ids2_multiclass, ious_multicass_annotator2, ious_oneclass_annotator2 = 0
 
-        mean_iou_intersection_oneclass, iou_intersection_oneclass, mean_iou_intersection_multiclass, iou_intersection_multiclass, ious_multiclass_intersection, ious_oneclass_intersection = inference(
-            x_images, intersections_numpy, intersections_plot,
-            pred1, pred2, number='_intersection',
-            mask_name='intersection', video_name='inters',
-            class_diff=False,
-            name = saved_model_name+'_')
+        mean_iou_intersection_oneclass, iou_intersection_oneclass, mean_iou_intersection_multiclass, iou_intersection_multiclass, ious_multiclass_intersection, ious_oneclass_intersection = 0
 
 
 
-        mean_iou_union_oneclass, iou_union_oneclass,mean_iou_union_multiclass, iou_union_multiclass, ious_multiclass_union, ious_oneclass_union = inference(x_images, unions_numpy, unions_plot, pred1, pred2, number='_union',
-                                              mask_name='union', video_name='union', class_diff=True,name = saved_model_name+'_')
+        mean_iou_union_oneclass, iou_union_oneclass,mean_iou_union_multiclass, iou_union_multiclass, ious_multiclass_union, ious_oneclass_union = 0
 
-        mean_iou_feeling_oneclass, iou_feeling_oneclass,mean_iou_feeling_multiclass, iou_feeling_multiclass,ious_multiclass_lucky,ious_oneclass_lucky = inference(x_images, feeling_numpy, feeling_plot, pred1, pred2,
-                                                  number='_feeling_lucky',
-                                                  mask_name='feeling lucky', video_name='feelings', class_diff=False, name = saved_model_name+'_')
+        mean_iou_feeling_oneclass, iou_feeling_oneclass,mean_iou_feeling_multiclass, iou_feeling_multiclass,ious_multiclass_lucky,ious_oneclass_lucky = 0
 
         optimal_threshold_multiclass,optimal_iou_multiclass,optimal_threshold_oneclass,optimal_iou_oneclass,ap_score_oneclass,optimal_iou_head,optimal_iou_tail,optimal_head_treshold,optimal_tail_threshold,iou_multiclass_best_tresholds,ious_opt_oneclass_annotator1, ious_opt_multiclass_annotator1,ious_opt_head_annotator1,ious_opt_tail_annotator1, optimal_merge_iou, optimal_merge_treshold,iou_full_agreement = calculate_optimal_threshold(x_images,true_masks,soft1, soft2,pred1,saved_model_name+'_',intersections_numpy)
 
