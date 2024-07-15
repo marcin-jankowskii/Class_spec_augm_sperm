@@ -779,7 +779,7 @@ mode_dict = {'normal': 'mixed',
 }
 
 
-wandb.init(project="Noisy_label", entity="noisy_label",
+wandb.init(project="example", entity="example",
             config={
             "model": "smpUNet++",
             "batch_size": 1,
