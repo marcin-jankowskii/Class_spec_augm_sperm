@@ -31,4 +31,5 @@ Aby wyniki były zgodne z artykułem należy użyć annotatora 1
 
 Przy inferencji należy ustawić mode na "intersection_inference"
 
-
+!!!!
+Brakuje datasetu, należy w configu określić jego ścieżkę
