@@ -506,7 +506,7 @@ class_colors = [[0, 0, 0], [0, 255, 0], [0, 0, 255],[0,255,255]]  # tło, wić, 
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")
 
 
-wandb.init(project="Noisy_label", entity="noisy_label",
+wandb.init(project="example", entity="example",
             config={
             "epochs": 300,
             "batch_size": 6,
