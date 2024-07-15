@@ -33,3 +33,8 @@ Przy inferencji należy ustawić mode na "intersection_inference"
 
 !!!!
 Brakuje datasetu, należy w configu określić jego ścieżkę
+
+Należy określić również projekt dla wandb.
+
+Za trening odpowiada plik train.py
+Za inferencje odpowiada plik inference.py
